@@ -1,9 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import { FirstPage } from './FirstPage/firstPage';
 
 function App() {
   return (
     <div>
+      < FirstPage />
     </div>
   );
 }

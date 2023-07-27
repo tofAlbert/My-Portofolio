@@ -1,0 +1,54 @@
+.background {
+    width: auto;
+    height: 500px;
+    padding-top: 0;
+    color: white;
+    background-image: url("https://i.gifer.com/Nv2.gif");
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 100px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+    transition: transform 0.3s, font-size 0.3s;
+    box-shadow: 5px 5px 10px rgba(0, 255, 0, 0.5);
+}
+
+.slide {
+    background-color: black;
+    position: absolute;
+    min-height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 35px;
+    transform: rotate(90deg);
+}
+
+.input:hover h2 {
+    transform: rotate(0deg);
+    top: 10%;
+  }
+
+  .input:hover {
+    transform: scale(1.1);
+  }
+ 
+
+  .input:not(:hover) {
+    transform: scale(1);
+  }
+  
