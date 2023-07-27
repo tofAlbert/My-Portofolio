@@ -1,35 +1,23 @@
 import React from "react"
 import "./first.Page.css"
+import { HomePage } from "./homePage"
+import { AboutPage } from "./aboutPage"
+import { WorkPage } from "./workPage"
+import { ContactPage } from "./contactPage"
 
-export function FirstPage () {
+export function FirstPage() {
     return (
         <div className="container">
             <div className="background">
-            <h1>
-            My Portofolio
-            </h1>
+                <h1>
+                    My Portofolio
+                </h1>
             </div>
             <div className="slide">
-                <div className="input">
-                    <h2>
-                        HOME
-                    </h2>
-                </div>
-                <div className="input">
-                    <h2>
-                        ABOUT
-                    </h2>
-                </div>
-                <div className="input">
-                    <h2>
-                        WORK
-                    </h2>
-                </div>
-                <div className="input">
-                    <h2>
-                        CONTACT
-                    </h2>
-                </div>
+                < HomePage />
+                < AboutPage />
+                < WorkPage />
+                < ContactPage />
             </div>
         </div>
     )

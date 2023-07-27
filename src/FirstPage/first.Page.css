@@ -16,6 +16,7 @@ h1 {
 
 .input {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #f1f1f1;
@@ -52,3 +53,37 @@ h2 {
     transform: scale(1);
   }
   
+  .descriptione {
+    display: none;
+  }
+
+ .btn {
+    border-radius: 30em;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 5px 5px 5px rgba(0, 255, 0, 0.5);
+    background-color: black;
+    color: white;
+  }
+
+  .btn::after {
+    content: '';
+    height: 3em;
+    width: 0;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, red 0%, green 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+  }
+
+  .btn:hover::before {
+    width: 9em;
+  }
